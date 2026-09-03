@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLite | Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-logo" href="./" aria-label="ShopLite trang chủ">ShopLite</a>
+
+      <form class="search-form" role="search" action="#" method="get">
+        <label class="visually-hidden" for="site-search">Tìm kiếm sản phẩm</label>
+        <input
+          id="site-search"
+          name="q"
+          type="search"
+          placeholder="Tìm sản phẩm..."
+          autocomplete="off"
+        >
+        <button type="button">Tìm</button>
+      </form>
+
+      <a class="cart-link" href="#" aria-label="Giỏ hàng có 2 sản phẩm">
+        <svg
+          class="cart-link__icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M3 4h2l2.2 9.2a1 1 0 0 0 1 .8h9.6a1 1 0 0 0 1-.8L21 7H7.2"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.8"
+          />
+          <circle cx="10" cy="19" r="1.5" fill="currentColor" />
+          <circle cx="18" cy="19" r="1.5" fill="currentColor" />
+        </svg>
+        <span>Giỏ hàng</span>
+        <span class="cart-link__badge" aria-hidden="true">2</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="product-section" aria-labelledby="product-heading">
+        <header class="section-header">
+          <p class="section-eyebrow">Danh mục nổi bật</p>
+          <h1 id="product-heading">Sản phẩm</h1>
+          <p class="section-description">
+            Khu vực danh sách sản phẩm sẽ được hoàn thiện ở ngày 2.
+          </p>
+        </header>
+
+        <section class="product-grid" aria-label="Danh sách sản phẩm xem trước">
+          <article class="product-card">
+            <p class="product-card__media" aria-hidden="true">Hình ảnh</p>
+            <h2>Tên sản phẩm</h2>
+            <p>Mô tả ngắn cho thẻ sản phẩm mẫu.</p>
+            <p class="product-card__price">000.000 VND</p>
+          </article>
+
+          <article class="product-card">
+            <p class="product-card__media" aria-hidden="true">Hình ảnh</p>
+            <h2>Tên sản phẩm</h2>
+            <p>Mô tả ngắn cho thẻ sản phẩm mẫu.</p>
+            <p class="product-card__price">000.000 VND</p>
+          </article>
+
+          <article class="product-card">
+            <p class="product-card__media" aria-hidden="true">Hình ảnh</p>
+            <h2>Tên sản phẩm</h2>
+            <p>Mô tả ngắn cho thẻ sản phẩm mẫu.</p>
+            <p class="product-card__price">000.000 VND</p>
+          </article>
+
+          <article class="product-card">
+            <p class="product-card__media" aria-hidden="true">Hình ảnh</p>
+            <h2>Tên sản phẩm</h2>
+            <p>Mô tả ngắn cho thẻ sản phẩm mẫu.</p>
+            <p class="product-card__price">000.000 VND</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">ShopLite</p>
+      <p>Cung cấp các sản phẩm chọn lọc với trải nghiệm mua sắm gọn gàng.</p>
+
+      <nav aria-label="Liên kết cuối trang">
+        <ul class="footer-links">
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Chính sách giao hàng</a></li>
+          <li><a href="#">Hỗ trợ khách hàng</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
