@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÙA | Cửa hàng thời trang</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./theme.js" defer></script><script src="./navigation.js" defer></script>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-logo" href="./index.html" aria-label="MÙA trang chủ">MÙA<span>.</span></a>
+
+        <nav id="main-nav" class="main-nav" aria-label="Danh mục chính">
+          <a href="./index.html">Cửa hàng</a>
+          <a href="#products">Áo</a>
+          <a href="#products">Đầm & Váy</a>
+          <a href="#products">Khoác</a>
+          <a href="#products">Giày</a>
+        </nav>
+
+        <form class="search-form" role="search" action="#" method="get">
+          <label class="visually-hidden" for="site-search">Tìm kiếm sản phẩm</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+          </svg>
+          <input
+            id="site-search"
+            name="q"
+            type="search"
+            placeholder="Tìm sản phẩm..."
+            autocomplete="off"
+          >
+        </form>
+
+        <div class="header-actions" aria-label="Tài khoản và giỏ hàng">
+          <button class="nav-toggle" type="button" aria-label="Danh mục" aria-expanded="false" aria-controls="main-nav" hidden>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <button class="theme-toggle" type="button" aria-label="Chế độ tối" aria-pressed="false" title="Chuyển sang chế độ tối">
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></svg>
+          </button>
+          <a class="icon-link" href="#" aria-label="Tài khoản">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M4 21c1.6-4.2 4.2-6 8-6s6.4 1.8 8 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+            </svg>
+          </a>
+          <a class="icon-link" href="./cart.html" aria-label="Giỏ hàng">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 5h2l1.8 9h8.8l1.4-6H8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              <circle cx="10" cy="19" r="1.4" fill="currentColor" />
+              <circle cx="17" cy="19" r="1.4" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p class="hero-kicker"><span></span>Bộ sưu tập hè 2026</p>
+          <h1 id="hero-heading">Phong cách của bạn, theo từng mùa.</h1>
+          <p>
+            Những thiết kế tối giản, chất liệu thoáng nhẹ và bền bỉ, sẵn sàng cho mọi
+            khoảnh khắc trong ngày.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">Mua ngay</a>
+            <a class="button button-muted" href="#products">Xem hàng mới</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-layout" id="products" aria-labelledby="product-heading">
+        <aside class="shop-sidebar" aria-label="Bộ lọc sản phẩm">
+          <h2>Danh mục</h2>
+          <ul class="category-list">
+            <li><a class="is-active" href="#products"><span>Tất cả</span><strong>24</strong></a></li>
+            <li><a href="#products"><span>Áo</span><strong>5</strong></a></li>
+            <li><a href="#products"><span>Quần</span><strong>4</strong></a></li>
+            <li><a href="#products"><span>Đầm & Váy</span><strong>4</strong></a></li>
+            <li><a href="#products"><span>Áo khoác</span><strong>4</strong></a></li>
+            <li><a href="#products"><span>Giày</span><strong>3</strong></a></li>
+            <li><a href="#products"><span>Phụ kiện</span><strong>4</strong></a></li>
+          </ul>
+
+          <h2>Ưu đãi</h2>
+          <ul class="promo-list">
+            <li><span class="sale-pill">Sale</span>Đang giảm giá</li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M3 7h12v9H3zM15 10h3l3 3v3h-6z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" />
+                <circle cx="7" cy="18" r="1.6" fill="currentColor" />
+                <circle cx="18" cy="18" r="1.6" fill="currentColor" />
+              </svg>
+              Freeship từ 999.000đ
+            </li>
+          </ul>
+        </aside>
+
+        <div class="product-area">
+          <div class="product-toolbar">
+            <h2 id="product-heading"><strong>24</strong> sản phẩm</h2>
+            <div class="sort-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M4 7h12M4 12h8M4 17h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+              </svg>
+              <select aria-label="Sắp xếp sản phẩm">
+                <option>Phổ biến nhất</option>
+                <option>Hàng mới về</option>
+                <option>Giá thấp đến cao</option>
+              </select>
+            </div>
+          </div>
+
+          <section class="product-grid" aria-label="Danh sách sản phẩm">
+            <article class="product-card product-card--cream">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Áo thun cotton basic">
+                <span class="badge">-17%</span>
+                <span class="product-icon product-icon--shirt"></span>
+                <strong>Áo thun</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Áo</p>
+                <h3><a href="./product.html">Áo thun cotton basic</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.6 trên 5">★★★★★ <span>4.6 (214)</span></p>
+                <p class="product-card__price">290.000đ <del>350.000đ</del></p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--gold">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Túi tote vải canvas">
+                <span class="product-icon product-icon--bag"></span>
+                <strong>Túi tote</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Phụ kiện</p>
+                <h3><a href="./product.html">Túi tote vải canvas</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.8 trên 5">★★★★★ <span>4.8 (96)</span></p>
+                <p class="product-card__price">180.000đ</p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--charcoal">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Áo khoác gió nhẹ">
+                <span class="badge badge-dark">Mới</span>
+                <span class="product-icon product-icon--jacket"></span>
+                <strong>Áo khoác</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Áo khoác</p>
+                <h3><a href="./product.html">Áo khoác gió nhẹ</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.7 trên 5">★★★★★ <span>4.7 (88)</span></p>
+                <p class="product-card__price">620.000đ <del>720.000đ</del></p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--rose">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Áo croptop gân tăm">
+                <span class="product-icon product-icon--shirt"></span>
+                <strong>Áo croptop</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Áo</p>
+                <h3><a href="./product.html">Áo croptop gân tăm</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.5 trên 5">★★★★☆ <span>4.5 (176)</span></p>
+                <p class="product-card__price">230.000đ <del>290.000đ</del></p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--ink">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Quần jogger nỉ">
+                <span class="product-icon product-icon--pants"></span>
+                <strong>Quần jogger</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Quần</p>
+                <h3><a href="./product.html">Quần jogger nỉ</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.6 trên 5">★★★★★ <span>4.6 (142)</span></p>
+                <p class="product-card__price">380.000đ <del>450.000đ</del></p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--olive">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Mũ bucket vành tròn">
+                <span class="product-icon product-icon--bag"></span>
+                <strong>Mũ bucket</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Phụ kiện</p>
+                <h3><a href="./product.html">Mũ bucket vành tròn</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.3 trên 5">★★★★☆ <span>4.3 (143)</span></p>
+                <p class="product-card__price">190.000đ <del>240.000đ</del></p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--gold">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Áo sơ mi linen tay dài">
+                <span class="badge badge-dark">Mới</span>
+                <span class="product-icon product-icon--shirt"></span>
+                <strong>Áo sơ mi</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Áo</p>
+                <h3><a href="./product.html">Áo sơ mi linen tay dài</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.8 trên 5">★★★★★ <span>4.8 (132)</span></p>
+                <p class="product-card__price">520.000đ</p>
+              </div>
+            </article>
+
+            <article class="product-card product-card--sky">
+              <div class="product-card__visual">
+              <a class="product-card__media" href="./product.html" aria-label="Xem chi tiết Quần jeans ống suông">
+                <span class="badge">-14%</span>
+                <span class="product-icon product-icon--pants"></span>
+                <strong>Quần jeans</strong>
+              </a>
+              <button class="product-card__button" type="button">Thêm vào giỏ</button>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Quần</p>
+                <h3><a href="./product.html">Quần jeans ống suông</a></h3>
+                <p class="rating" aria-label="Đánh giá 4.6 trên 5">★★★★★ <span>4.6 (158)</span></p>
+                <p class="product-card__price">680.000đ <del>790.000đ</del></p>
+              </div>
+            </article>
+          </section>
+
+          <button class="load-more" type="button">Tải thêm sản phẩm <span>(16)</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="site-logo site-logo--footer" href="./index.html">MÙA<span>.</span></a>
+          <p>Thời trang theo mùa, tối giản, bền vững, may đo tỉ mỉ cho nhịp sống mỗi ngày.</p>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+
+        <nav aria-label="Cửa hàng">
+          <h2>Cửa hàng</h2>
+          <a href="#">Hàng mới về</a>
+          <a href="#">Bán chạy</a>
+          <a href="#">Sale</a>
+          <a href="#">Bộ sưu tập</a>
+          <a href="#">Quà tặng</a>
+        </nav>
+
+        <nav aria-label="Hỗ trợ">
+          <h2>Hỗ trợ</h2>
+          <a href="#">Hướng dẫn chọn size</a>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Vận chuyển</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">FAQ</a>
+        </nav>
+
+        <nav aria-label="Về MÙA">
+          <h2>Về MÙA</h2>
+          <a href="#">Câu chuyện</a>
+          <a href="#">Bền vững</a>
+          <a href="#">Cửa hàng</a>
+          <a href="#">Tuyển dụng</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 MÙA Studio. Bản prototype demo.</p>
+        <p>Thiết kế tại Việt Nam</p>
+      </div>
+    </footer>
+  </body>
+</html>
