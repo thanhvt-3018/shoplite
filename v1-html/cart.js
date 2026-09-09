@@ -3,7 +3,12 @@ const money = value => new Intl.NumberFormat('vi-VN').format(value) + 'đ';
 function updateSummary() {
   let subtotal = 0;
   items.querySelectorAll('.cart-item').forEach(item => {
-    subtotal += Number(item.dataset.price) * Number(item.querySelector('input').value);
+    const price = Number(item.dataset.price);
+    if (!item.dataset.price || !Number.isFinite(price) || price < 0) {
+      throw new Error('Invalid cart price');
+    }
+    item.querySelector('.unit-price').textContent = money(price);
+    subtotal += price * Number(item.querySelector('input').value);
   });
   const shipping = subtotal === 0 || subtotal >= 999000 ? 0 : 30000;
   document.querySelector('#subtotal').textContent = money(subtotal);
@@ -34,3 +39,8 @@ items.addEventListener('click', event => {
 document.querySelector('#checkout').addEventListener('click', () => {
   document.querySelector('#checkout-message').textContent = 'Đây là bản demo giỏ hàng tĩnh, chưa kết nối thanh toán.';
 });
+updateSummary();
+items.querySelectorAll('input, .remove-item').forEach(control => {
+  control.disabled = false;
+});
+document.querySelector('#cart-unavailable').hidden = true;
