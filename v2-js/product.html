@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÙA | Áo thun cotton basic</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./theme.js" defer></script><script src="./navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-logo" href="./index.html" aria-label="MÙA trang chủ">MÙA<span>.</span></a>
+
+        <nav id="main-nav" class="main-nav" aria-label="Danh mục chính">
+          <a href="./index.html">Cửa hàng</a>
+          <a href="./index.html#products">Áo</a>
+          <a href="./index.html#products">Đầm & Váy</a>
+          <a href="./index.html#products">Khoác</a>
+          <a href="./index.html#products">Giày</a>
+        </nav>
+
+        <form class="search-form" role="search" action="#" method="get">
+          <label class="visually-hidden" for="product-search">Tìm kiếm sản phẩm</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+          </svg>
+          <input
+            id="product-search"
+            name="q"
+            type="search"
+            placeholder="Tìm sản phẩm..."
+            autocomplete="off"
+          >
+        </form>
+
+        <div class="header-actions" aria-label="Tài khoản và giỏ hàng">
+          <button class="nav-toggle" type="button" aria-label="Danh mục" aria-expanded="false" aria-controls="main-nav" hidden>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <button class="theme-toggle" type="button" aria-label="Chế độ tối" aria-pressed="false" title="Chuyển sang chế độ tối">
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></svg>
+          </button>
+          <a class="icon-link" href="#" aria-label="Tài khoản">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M4 21c1.6-4.2 4.2-6 8-6s6.4 1.8 8 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+            </svg>
+          </a>
+          <a class="icon-link" href="./cart.html" aria-label="Giỏ hàng">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 5h2l1.8 9h8.8l1.4-6H8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              <circle cx="10" cy="19" r="1.4" fill="currentColor" />
+              <circle cx="17" cy="19" r="1.4" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <nav class="breadcrumbs" aria-label="Đường dẫn">
+        <a href="./index.html">Cửa hàng</a>
+        <span>/</span>
+        <a href="./index.html#products">Áo</a>
+        <span>/</span>
+        <strong>Áo thun cotton basic</strong>
+      </nav>
+
+      <section class="product-detail" aria-labelledby="product-detail-heading">
+        <div class="product-detail__media product-card--cream" aria-hidden="true">
+          <span class="product-icon product-icon--shirt"></span>
+        </div>
+
+        <div class="product-detail__content">
+          <p class="product-detail__category">Áo</p>
+          <h1 id="product-detail-heading">Áo thun cotton basic</h1>
+
+          <div class="product-rating">
+            <span aria-label="Đánh giá 4.6 trên 5">★★★★★</span>
+            <strong>4.6</strong>
+            <p>214 đánh giá</p>
+            <p>Đã bán 1.820</p>
+          </div>
+
+          <div class="product-price-row">
+            <p class="product-detail__price">290.000đ</p>
+            <del>350.000đ</del>
+            <span class="badge">-17%</span>
+          </div>
+
+          <p class="product-detail__description">
+            Áo thun cotton 100% bo cổ, form regular thoáng mát. Đường may chắc chắn,
+            giặt máy không xù và dễ phối với mọi tủ đồ theo mùa.
+          </p>
+
+          <div class="option-block">
+            <div class="option-heading">
+              <h2>Màu sắc</h2>
+              <span>Trắng</span>
+            </div>
+            <div class="swatches" aria-label="Chọn màu sắc">
+              <button class="swatch swatch--white is-selected" type="button" aria-label="Trắng"></button>
+              <button class="swatch swatch--black" type="button" aria-label="Đen"></button>
+              <button class="swatch swatch--sage" type="button" aria-label="Xanh sage"></button>
+            </div>
+          </div>
+
+          <div class="option-block">
+            <div class="option-heading">
+              <h2>Kích cỡ</h2>
+              <a href="#">Hướng dẫn chọn size</a>
+            </div>
+            <div class="size-options" aria-label="Chọn kích cỡ">
+              <button type="button">S</button>
+              <button type="button">M</button>
+              <button type="button">L</button>
+              <button type="button">XL</button>
+            </div>
+          </div>
+
+          <p class="stock-status">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" />
+            </svg>
+            Còn hàng - 48 sản phẩm
+          </p>
+
+          <div class="purchase-row">
+            <div class="quantity-control" aria-label="Số lượng">
+              <button type="button" aria-label="Giảm số lượng">−</button>
+              <strong>1</strong>
+              <button type="button" aria-label="Tăng số lượng">+</button>
+            </div>
+            <button class="button add-cart-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M5 5h2l1.8 9h8.8l1.4-6H8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                <circle cx="10" cy="19" r="1.4" fill="currentColor" />
+                <circle cx="17" cy="19" r="1.4" fill="currentColor" />
+              </svg>
+              Chọn kích cỡ
+            </button>
+          </div>
+
+          <div class="service-grid" aria-label="Dịch vụ mua hàng">
+            <div class="service-item">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M3 7h12v9H3zM15 10h3l3 3v3h-6z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" />
+                  <circle cx="7" cy="18" r="1.6" fill="currentColor" />
+                  <circle cx="18" cy="18" r="1.6" fill="currentColor" />
+                </svg>
+              </span>
+              <div>
+                <strong>Giao nhanh 2-4 ngày</strong>
+                <p>Toàn quốc, freeship đơn lớn</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M20 7v5h-5M4 17v-5h5M18.5 9A7 7 0 0 0 6.7 6.7M5.5 15A7 7 0 0 0 17.3 17.3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+              </span>
+              <div>
+                <strong>Đổi trả 30 ngày</strong>
+                <p>Miễn phí nếu lỗi sản xuất</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 3 5 6v6c0 4.4 2.8 7.2 7 9 4.2-1.8 7-4.6 7-9V6z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" />
+                </svg>
+              </span>
+              <div>
+                <strong>Hàng chính hãng</strong>
+                <p>Cam kết chất liệu thật</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="m20 13-7 7L4 11V4h7z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" />
+                  <circle cx="8.5" cy="8.5" r="1" fill="currentColor" />
+                </svg>
+              </span>
+              <div>
+                <strong>Giá tốt mỗi mùa</strong>
+                <p>Ưu đãi cho thành viên</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
